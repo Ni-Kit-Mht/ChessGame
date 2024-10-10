@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Basic styles for the chessboard */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #container {
+            position: relative;
+            width: 100vw;   /* Full width of the viewport */
+            height: 100vh;  /* Full height of the viewport */
+            overflow: hidden; /* Hide any overflow */
+            display: flex;
+            justify-content: center; /* Center chessboard */
+            align-items: center; /* Center chessboard */
+        }
+        #chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 150px); /* Fixed square size */
+            grid-template-rows: repeat(8, 150px); /* Fixed square size */
+            transform-origin: center; /* Set the origin for scaling */
+        }
+        .square {
+            width: 150px; /* Fixed size for squares */
+            height: 150px; /* Fixed size for squares */
+            display: flex; /* Center pieces */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            position: relative;
+        }
+        .light {
+            background-color: #eee;
+        }
+        .dark {
+            background-color: #999;
+        }
+        .img{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="chessboard"></div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>

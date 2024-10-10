@@ -1,0 +1,13 @@
+.movable{
+    z-index: 200;
+}
+.selected {
+    outline: 2px solid yellow; /* Highlight the selected piece with a yellow outline */
+    z-index: 100;
+}
+.displayNone{
+    display: none;
+}
+.moving {
+    transition: transform 0.5s ease; /* Adjust duration and easing as needed */
+}
